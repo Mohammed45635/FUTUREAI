@@ -1,0 +1,9 @@
+# Install transformers if you don't have it: pip install transformers
+from transformers import pipeline
+
+# Load pre-trained sentiment analysis pipeline
+classifier = pipeline('sentiment-analysis')
+
+# Classify sentiment
+result = classifier("I love learning AI!")
+print(result)
